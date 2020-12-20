@@ -1,0 +1,12 @@
+Maze Size: 50 x 51 (made 50 tall 51 wide)
+Data Files Required: maze1.png, maze2.png, maze3.png, maze4.png, maze5.png
+Code Files: Maze.java, Cell.java
+Output File: output.txt
+Other files submitted: maze1.png, maze2.png, maze3.png, maze4.png, maze5.png (not the same as data files, which were the mazes without solutions)
+
+--------------------------------
+1151, 637, 1417, 2471, 780 vertices expanded for pure DFS (no loops allowed) on mazes 1, 2, 3, 4, 5 respectively. (ran IDF method with VERY high limit...
+              no loops in maze and even if there were my way of finding successors of cells won't instantiate a new cell if one in its location has been instantiated
+              before with lower cost/number of moves to get there)
+Doing IDS starting at depth = 50 causes way, way more vertices to be expanded (hundreds of thousands) which makes sense considering those numbers and the number of moves
+in ideal solutions
